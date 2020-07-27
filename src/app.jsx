@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
+import './app.css';
+import Image from './card.png';
 
-class Banana extends Component {
+class BlackBox extends Component {
     render() {
         return (
-            <div>
-                <p>Banana grams 1</p>
-                <p>Banana grams 2</p>
-                <p>Banana grams 3</p>
-                <p>Banana grams 4</p>
+            <div className="pile">
             </div>
         );
     }
@@ -15,10 +13,12 @@ class Banana extends Component {
 
 export default function App() {
     return (
-        <div>
-            <h1 onClick={alert('Hi user!')}>ooga booga</h1>
-            <h2>chungus</h2>
-            <Banana/>
+        <div className='pile-container'>
+            <BlackBox/>
+            <BlackBox/>
+            <BlackBox/>
+            <BlackBox/>
+            <img src={Image}/>
         </div>
     );
 }
